@@ -1,0 +1,5 @@
+$(document).ready(function(){
+	$('.show').on('click', function () {
+	  document.getElementById("content").innerHTML=("The Constitution of India (IAST: Bhāratīya Saṃvidhāna) is the supreme law of India.The document lays down the framework demarcating fundamental political code, structure, procedures, powers and duties of government institutions and sets out fundamental rights,directive principles and the duties of citizens. It the longest written constitution of any country on earth.B. R. Ambedkar, chairman of the drafting committee, is widely considered to be its chief architect.It imparts constitutional supremacy (not parliamentary supremacy, since it was created by a constituent assembly rather than Parliament), and was adopted by its people with a declaration in its preamble. Parliament cannot override the constitution.")
+});
+})
