@@ -1,0 +1,64 @@
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Simple CSS tranitions: Text links</title>
+	<style>
+	   * {
+	        margin: 0;
+		 }
+		 body {
+		     font: 20px/1.5 arial, helvetica, sans-serif;
+			 color: #000;
+			 margin: 20px;
+			 }
+		p {
+		    margin: 20px 0;
+			}
+				a {
+			-webkit-transition: .5s;
+			transition: .5s;
+		}
+	
+		#elephant {
+			color: #999;
+		}
+		#elephant:hover {
+			color: #f66;
+		}
+	
+		#plesiosaur {
+			color: #06c;
+			text-decoration: none;
+			border-bottom: 3px solid #ddd;
+		}
+		#plesiosaur:hover {
+			border-color: #06c;
+		}
+	
+		#tourist {
+			color: #f66;
+		}
+		#tourist:hover {
+			color: #c00;
+			background: #fcc
+		}
+	
+
+		#htmldog a:hover {
+			transform: rotate(360deg);
+		}
+	</style>
+</head>
+<body>
+	<h1>Simple <a href="http://www.htmldog.com/guides/css/advanced/transitions/">CSS transitions</a></h1>
+	<p>Using <a href="http://www.htmldog.com/references/css/properties/transition/">the <code>transition</code> property</a> for basic animated effects when links are hovered over.</p>
+	<ul>
+		<li><a href="" id="elephant">Changing color</a></li>
+		<li><a href="" id="plesiosaur">Changing border color</a></li>
+		<li><a href="" id="tourist">Changing color and background color</a></li>
+	</ul>
+
+	<!-- Link back to HTML Dog: -->
+	<p id="htmldog"><a href="http://www.htmldog.com/examples/"><img src="http://www.htmldog.com/badge1.gif" alt="HTML Dog"></a></p>
+</body>
+</html>

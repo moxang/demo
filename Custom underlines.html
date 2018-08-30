@@ -1,0 +1,93 @@
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Custom underlines</title>
+   <style>
+       body {
+	   font: 100% arial, helvetica, sans-serif;
+		}
+		p {
+			line-height: 2;
+		}
+		a {
+			color: blue;
+			/* all but link1 have 'text-decoration: none' applied to them to remove the default underline.
+			These have been kept in each declaration to show how each rule would be applied individually.
+			If you do have a number of different link styles all of which require text-decoration: none however,
+			you would place that here, rather than in each declaration block. */
+		}
+		a:visited {
+			color: #09c;
+		}
+		a:hover {
+			color: lime;
+		}
+		a:active {
+			color: red;
+		}
+
+		/* the default styling of a link: */
+		#link1 {
+	
+		}
+	
+		#link1:hover {
+			text-decoration: none;
+		}
+	
+		/* underlines using borders: */
+		#link2 {
+			text-decoration: none;
+			border-bottom: 2px dotted #0c0;
+		}
+	
+		/* underlines using images: */
+		#link3 {
+			text-decoration: none;
+			padding-bottom: 4px;
+			background: url(/examples/images/underline_vaguered.gif) bottom repeat-x;
+		}
+	
+		#link4 {
+			text-decoration: none;
+			padding-bottom: 5px;
+			background: url(/examples/images/underline_greenspots.gif) bottom repeat-x;
+		}
+	
+		#link5 {
+			text-decoration: none;
+			padding-bottom: 2px;
+			background: url(/examples/images/underline_zigzag.gif) bottom repeat-x;
+		}
+	
+		#link6 {
+			text-decoration: none;
+			padding-bottom: 3px;
+			background: url(/examples/images/underline_arrowoff.gif) bottom repeat-x;
+		}
+	
+		#link6:hover {
+			background: url(/examples/images/underline_arrowon.gif) bottom repeat-x;
+		}
+	
+		#link7 {
+			text-decoration: none;
+			padding-bottom: 20px;
+			background: url(/examples/images/underline_ruler.gif) bottom repeat-x;
+		}
+	
+		#link8 {
+			text-decoration: none;
+			padding-bottom: 6px;
+			background: url(/examples/images/underline_ragged.gif) bottom repeat-x;
+		}
+	</style>
+</head>
+<body>
+	<p>The <a href="#" id="link1">green seed</a> of the <a href="#" id="link2">white-flowering</a> climbing <a href="#" id="link3">leguminous papilionaceous</a> plant, <a href="#" id="link4">pisum sativum</a>, has become a dining-table favourite <a href="#" id="link5">for good reason</a>.</p>
+	<p><a href="#" id="link6">The perfect accompaniment</a> to any meal, the <a href="#" id="link7">diminutive spherical vegetable</a> brings joy to billions worldwide, be they <a href="#" id="link8">fresh, frozen, canned or dried</a>.</p>
+
+	<!-- Link back to HTML Dog: -->
+	<p><a href="http://www.htmldog.com/examples/"><img src="http://www.htmldog.com/badge1.gif" alt="HTML Dog"></a></p>
+</body>
+</html>
